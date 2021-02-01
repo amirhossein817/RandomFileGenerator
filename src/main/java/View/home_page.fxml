@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="600.0" style="-fx-background-color: #363636;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.Controller.HomePage">
+   <children>
+      <Text fill="WHITE" layoutX="115.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Random file Generator">
+         <font>
+            <Font name="Arial Bold" size="35.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="223.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="enter file location:" wrappingWidth="160.611328125">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="generate" layoutX="229.0" layoutY="357.0" mnemonicParsing="false" onMouseClicked="#generateOnMouseClicked" style="-fx-background-color: #1ebfbf;" text="Generate" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="textFieldFolder" editable="false" layoutX="174.0" layoutY="178.0" prefHeight="25.0" prefWidth="344.0" style="-fx-text-fill: #1ebfbf; -fx-prompt-text-fill: #135f5f;" promptText="dont selected addres.">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="textFieldFile" editable="false" layoutX="174.0" layoutY="235.0" prefHeight="25.0" prefWidth="344.0" style="-fx-text-fill: #1ebfbf; -fx-prompt-text-fill: #135f5f;" promptText="doesnt generate yet.">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="typeInput" promptText="File types include search e.g. mkv, mp4, mp3, ..." layoutX="121.0" layoutY="292.0" prefHeight="25.0" prefWidth="397.0" style="-fx-text-fill: #1ebfbf; -fx-prompt-text-fill: #135f5f;">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="browser" layoutX="78.0" layoutY="178.0" mnemonicParsing="false" onMouseClicked="#browserOnMouseClicked" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #1ebfbf;" text="Browser" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="play" layoutX="78.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#playOnMouseClicked" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #1ebfbf;" text="Play" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>
